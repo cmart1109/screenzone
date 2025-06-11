@@ -23,14 +23,14 @@ main {
     min-height: 150vh;
 }
 
-ul a {
+nav a {
     text-decoration: none;
     padding: 1rem;
     font-size: 20px;
     transition: color 0.2s ease-in-out;
 }
 
-ul a:hover {
+nav a:hover {
     color: var(--tertiary-color);
 }
 

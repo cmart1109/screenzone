@@ -16,7 +16,7 @@ async function getMovies() {
 
 function displayMovies(movies) {
     movies.forEach(movie => {
-        const poster = document.createElement('div');
+        const poster = document.createElement('a');
         poster.className = 'poster';
         const img = document.createElement('img');
         img.src = movie.image;
