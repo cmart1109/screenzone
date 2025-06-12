@@ -89,33 +89,33 @@ function clearMovies() {
     moviesContainer.innerHTML = '';
 }
 
-async function getAllMovies() {
+function getAllMovies() {
     clearMovies();
     displayMovies(moviesJSON.movies);
 }
 
-async function getPGMovies() {
+function getPGMovies() {
     clearMovies(); 
     const moviesArray = moviesJSON.movies;
     const pgMovies = moviesArray.filter(movie => movie.ratingLevel === 1);
     displayMovies(pgMovies);
 }
 
-async function get13Movies() {
+function get13Movies() {
     clearMovies(); 
     const moviesArray = moviesJSON.movies;
     const teenMovies = moviesArray.filter(movie => movie.ratingLevel === 2);
     displayMovies(teenMovies);
 }
 
-async function get16Movies() {
+function get16Movies() {
     clearMovies(); 
     const moviesArray = moviesJSON.movies;
     const matureMovies = moviesArray.filter(movie => movie.ratingLevel === 3);
     displayMovies(matureMovies);
 }
 
-async function get18Movies() {
+function get18Movies() {
     clearMovies(); 
     const moviesArray = moviesJSON.movies;
     const adultMovies = moviesArray.filter(movie => movie.ratingLevel === 4);
