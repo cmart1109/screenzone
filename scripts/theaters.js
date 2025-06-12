@@ -100,7 +100,7 @@ let theaters = {
         },
         {
           "title": "Something Beautiful",
-          "showtimes": ["12:20 PM", "3:20 PM", "6:20 PM", "9:20 PM"]
+          "showtimes": ["6:20 PM", "9:20 PM"]
         }
       ]
     },
@@ -126,7 +126,7 @@ let theaters = {
         },
         {
           "title": "Thunderbolts",
-          "showtimes": ["11:30 AM", "2:30 PM", "5:30 PM", "8:30 PM"]
+          "showtimes": ["11:30 AM", "2:30 PM", "8:30 PM"]
         },
         {
           "title": "Hurry Up Tomorrow",
