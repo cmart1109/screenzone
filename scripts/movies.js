@@ -11,7 +11,7 @@ let moviesJSON = {
       "rating": "PG",
       "ratingLevel": 1,
       "duration": "106 Minutes",
-      "image": "/images/posters/stitch.png"
+      "image": "./images/posters/stitch.png"
     },
     {
       "title": "Mission Impossible 8",
