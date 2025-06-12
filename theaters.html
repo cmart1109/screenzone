@@ -25,19 +25,14 @@
             </nav>
     </header>
     <main>
-        <img id="hero" src="./images/image.webp" alt="hero" loading="lazy">
-        <div class="hero-text">
-            <h1>Get the best experience with us</h1>
+        <div class="theater-selection">
+            <h1>Look for your nearest Movie Theater!</h1>
+            <select name="theater" id="theater-selection">
+                <option value="" selected disabled>Please Select a Movie Theater</option>
+            </select>
         </div>
-        <h1 class="movies-title">See the movies we have in catalog</h1>
-        <div class="filters">
-            <button id="all">All</button>
-            <button id="pg">PG</button>
-            <button id="teen">+13</button>
-            <button id="mature">+16</button>
-            <button id="adult">+18</button>
-        </div>
-        <div class="movies" id="movies">
+        
+        <div id="showtimes-container">
 
         </div>
     </main>
@@ -56,8 +51,9 @@
             </a>
         </div>
     </footer>
-    <script src="./scripts/movies.js"></script>
+    <script src="./scripts/theaters.js"></script>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/button.js"></script>
+
 </body>
 </html>
