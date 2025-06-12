@@ -7,7 +7,7 @@ const adultMoviesButton = document.getElementById('adult');
 letmoviesJSON = [];
 
 async function getMovies() {
-    const response = await fetch('../data/movies.json');
+    const response = await fetch('/data/movies.json');
     const data = await response.json();
     moviesJSON = data.movies;
         return data.movies;
