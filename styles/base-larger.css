@@ -67,5 +67,11 @@
 .theater-selection select {
     font-size: 22px;
 }
-    
+ 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 }
