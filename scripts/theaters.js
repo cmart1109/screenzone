@@ -7,14 +7,6 @@ let theaters = {
       "location": "123 Pig Street, Pig City",
       "movies": [
         {
-          "title": "Lilo and Stitch",
-          "showtimes": ["10:00 AM", "1:00 PM", "4:00 PM", "7:00 PM"]
-        },
-        {
-          "title": "Mission Impossible 8",
-          "showtimes": ["4:30 PM", "7:30 PM"]
-        },
-        {
           "title": "Ballerina",
           "showtimes": ["11:00 AM", "2:00 PM", "5:00 PM", "8:00 PM"]
         },
@@ -75,16 +67,16 @@ let theaters = {
       "location": "789 Light Blvd, Film City",
       "movies": [
         {
+          "title": "How to Train Your Dragon",
+          "showtimes": ["11:00 AM", "2:00 PM", "5:00 PM", "8:00 PM"]
+        },
+        {
           "title": "Lilo and Stitch",
           "showtimes": ["10:00 AM","11:00 AM", "1:00 PM", "4:00 PM", "7:00 PM"]
         },
         {
           "title": "Ballerina",
           "showtimes": ["10:40 AM", "1:40 PM", "4:40 PM", "7:40 PM"]
-        },
-        {
-          "title": "How to Train Your Dragon",
-          "showtimes": ["11:00 AM", "2:00 PM", "5:00 PM", "8:00 PM"]
         },
         {
           "title": "Thunderbolts",

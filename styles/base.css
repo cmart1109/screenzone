@@ -185,7 +185,6 @@ select {
     background-color: var(--font-color);
     color: var(--primary-color);
     padding: 20px;
-    font-size: 20px;
     border: none;
     outline: none;
     border-radius: 25px;
@@ -213,11 +212,10 @@ option {
     width: 70%;
     background: linear-gradient(80deg, var(--primary-color), var(--secondary-color));
     border-radius: 5%;
-    display: grid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    grid-template-columns: 0.7fr 1fr;
-    grid-template-rows: 0.4fr 0.6fr 1.5fr;
-    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .movie-showtimes p {
@@ -235,6 +233,7 @@ option {
     padding: 15px 10px;
     border: gray 1px solid;
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: small;
     
 }
 
