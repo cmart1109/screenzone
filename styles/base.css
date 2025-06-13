@@ -4,6 +4,7 @@
     --tertiary-color:#f28f3b;
     --font-color: #f4f4f4;
     --alternative-color: #d8dee9;
+    --default-background: linear-gradient(20deg, var(--primary-color), var(--secondary-color));
 }
 
 * {
@@ -19,7 +20,7 @@
 }
 
 header, footer {
-    background-color: var(--primary-color);
+    background: var(--default-background);
     padding: 10px;
 }
 
@@ -83,37 +84,32 @@ nav a:hover {
     
 .poster {
     display: flex;
-    height: 350px;
-    height: 520px;
+    height: 600px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
 .poster img {
     width: 100%;
-    height: 400px;
+    height: 80%;
     border-radius: 10px;
     transition: width, 0.4s;
+    margin-bottom: 5px;
 }
 
 .poster h3 {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
+    font-size: 1rem;
     text-align: center;
-}
-
-.poster h3:hover {
-    color: var(--tertiary-color);
-    cursor: pointer;
 }
 
 .movies-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
 }
 
 .filters {
@@ -125,6 +121,7 @@ nav a:hover {
     background-color: var(--secondary-color);
     border: 1px solid white;
     padding: 10px;
+    margin: 10px;
 
 }
 
@@ -176,6 +173,22 @@ footer {
     margin-left: 10px;
 }
 
+.ticket-button {
+    background-color: var(--tertiary-color);
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.ticket-button:hover {
+    background-color: var(--alternative-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 /* Theaters area */
 
 .theater-selection {
@@ -212,7 +225,7 @@ option {
     padding: 2rem;
     margin: 2rem;
     width: 70%;
-    background: linear-gradient(80deg, var(--primary-color), var(--secondary-color));
+    background: var(--default-background);
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -259,4 +272,62 @@ option {
     border-radius: 20px;
     display: inline-block;
     border-radius: 15px;
+}
+
+
+/* Candy-Store Area */
+
+.candy-header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#candy-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.combo-container {
+    background-color: var(--primary-color);
+    margin: 10px;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.combo-container img { width: 80%; }
+.prices-container { display: flex; }
+
+.normal-price {
+    font-size: 18px;
+    padding-left: 10px;
+    color: var(--tertiary-color);
+    text-decoration: line-through;
+}
+
+.sale  {
+    color: var(--alternative-color);
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.combo-container button {
+    background-color: var(--tertiary-color);
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 60px;
+    font-weight: bold;
+    border-radius: 20%;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.combo-container button:hover {
+    background-color: var(--alternative-color);
+    color: var(--primary-color);
 }

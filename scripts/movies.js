@@ -11,21 +11,21 @@ let moviesJSON = {
       "rating": "PG",
       "ratingLevel": 1,
       "duration": "106 Minutes",
-      "image": "./images/posters/stitch.png"
+      "image": "./images/posters/stitch.webp"
     },
     {
       "title": "Mission Impossible 8",
       "rating": "+13",
       "ratingLevel": 2,
       "duration": "169 Minutes",
-      "image": "./images/posters/mi8.png"
+      "image": "./images/posters/mi8.webp"
     },
     {
       "title": "Ballerina",
       "rating": "+16",
       "ratingLevel": 3,
       "duration": "169 Minutes",
-      "image": "./images/posters/ballerina.png"
+      "image": "./images/posters/ballerina.webp"
     },
     {
       "title": "Hot to Train a Dragon",
@@ -46,21 +46,21 @@ let moviesJSON = {
       "rating": "+16",
       "ratingLevel": 3,
       "duration": "169 Minutes",
-      "image": "./images/posters/f1.png"
+      "image": "./images/posters/f1.webp"
     },
     {
       "title": "Hurry Up Tomorrow",
       "rating": "+18",
       "ratingLevel": 4,
       "duration": "169 Minutes",
-      "image": "./images/posters/hut.png"
+      "image": "./images/posters/hut.webp"
     },
     {
       "title": "Something Beautiful",
       "rating": "+13",
       "ratingLevel": 2,
       "duration": "169 Minutes",
-      "image": "./images/posters/miley.png"
+      "image": "./images/posters/miley.webp"
     }
   ]
 }
@@ -78,9 +78,13 @@ function displayMovies(movies) {
         title.textContent = movie.title;
         const rating = document.createElement('p');
         rating.textContent = movie.rating;
+        const ticketButton = document.createElement('button');
+        ticketButton.textContent = 'Get Tickets';
+        ticketButton.className = 'ticket-button';
         poster.appendChild(img);
         poster.appendChild(title);
         poster.appendChild(rating);
+        poster.appendChild(ticketButton);
         moviesContainer.appendChild(poster);
     });
 }

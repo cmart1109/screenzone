@@ -133,17 +133,17 @@ let moviesImages = {
   "movies": [
     {
       "title": "Lilo and Stitch",
-      "image": "./images/posters/stitch.png",
+      "image": "./images/posters/stitch.webp",
       "synopsis": "LILO AND STITCH is the heartwarming and hilarious story of a Hawaiian girl and the runaway alien who helps her rebuild her family"
     },
     {
       "title": "Mission Impossible 8",
-      "image": "./images/posters/mi8.png",
+      "image": "./images/posters/mi8.webp",
       "synopsis": "Ethan and his team are on a mission to find and destroy an AI known as The Entity. The global journey results in incredible action scenes and more than one unexpected twist."
     },
     {
       "title": "Ballerina",
-      "image": "./images/posters/ballerina.png",
+      "image": "./images/posters/ballerina.webp",
       "synopsis": "In this spin-off of John Wick, we meet Eve Macaro (Ana de Armas), who seeks revenge against all those who murdered her family."
     },
     {
@@ -158,17 +158,17 @@ let moviesImages = {
     },
     {
       "title": "F1: The Movie",
-      "image": "./images/posters/f1.png",
+      "image": "./images/posters/f1.webp",
       "synopsis": "Nicknamed The Greatest Who Never Was, Sonny Hayes (Brad Pitt) was the most promising phenomenon of 1990s Formula One until his spectacular crash. Thirty years later, he's a nomadic driver for hire when he's approached by his former teammate Ruben Cervantes (Javier Bardem), owner of a struggling F1 team on the brink of collapse."
     },
     {
       "title": "Hurry Up Tomorrow",
-      "image": "./images/posters/hut.png",
+      "image": "./images/posters/hut.webp",
       "synopsis": "Hurry Up Tomorrow is a 2025 American psychological thriller film directed by Trey Edward Shults from a screenplay by Shults, Abel the Weeknd Tesfaye, and Reza Fahim. It serves as a companion piece to Tesfaye's 2025 album of the same name and stars Tesfaye as a fictionalized version of himself, alongside Jenna Ortega and Barry Keoghan. In the film, Tesfaye, struggling with depression and insomnia, gets pulled into an existential odyssey by a mysterious fan."
     },
     {
       "title": "Something Beautiful",
-      "image": "./images/posters/miley.png",
+      "image": "./images/posters/miley.webp",
       "synopsis": "Something Beautiful stands as a one-of-a-kind pop opera, where fantasy comes to life through the 13 original songs that make up Miley Cyrus's eponymous visual album. This cinematic experience was exclusively mixed by Alan Meyerson (Dune: Part One, Batman: The Dark Knight). The work was directed and written by Miley Cyrus, Jacob Bixenman, and Brendan Walter."
     }
   ]
