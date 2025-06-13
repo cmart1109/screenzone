@@ -340,6 +340,7 @@ option {
 .form-main {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     background-image: url("../images/wallpaper.webp");
 }
 
