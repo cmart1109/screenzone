@@ -398,3 +398,31 @@ form option {
     background-color: var(--alternative-color);
     color: var(--primary-color);
 }
+
+
+#confirmation-details {
+    background-color: var(--font-color);
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+}
+
+#confirmation-details p, strong {
+    color: var(--primary-color);
+}
+
+#delete-ticket {
+    background-color: var(--tertiary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+#delete-ticket:hover {
+    background-color: var(--font-color);
+    color: var(--primary-color);
+}

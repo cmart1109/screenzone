@@ -1,4 +1,4 @@
-const receiptContainer = document.getElementById('receipt')
+const deleteButton = document.getElementById('delete-ticket');
 
 
 const theaters = {
@@ -159,17 +159,30 @@ const combosList = {
 }
 
 
-function getTicketInfo(ticket) {
+const detailsContainer = document.getElementById('confirmation-details');
+const ticket = JSON.parse(localStorage.getItem('ticket'));
 
-    const teather = theaters.theaters[ticket.theaterIndex];
-    const movie = theaterSelect.movies[ticket.movieIndex];
-    const showtime = movie.showtimes[ticket.showtimeIndex];
-    const combo = combosList.combos[ticket.comboIndex];
-    
+if (ticket) {
+  const theater = theaters.theaters[ticket.theaterIndex];
+  const movie = theater.movies[ticket.movieIndex];
+  const showtime = movie.showtimes[ticket.showtimeIndex];
+  const number = ticket.ticketsIndex;
+  const combo = combosList.combos[ticket.comboIndex];
+
+detailsContainer.innerHTML = `
+  <p><strong>Theater:</strong> ${theater.name} - ${theater.location}</p>
+  <p><strong>Movie:</strong> ${movie.title}</p>
+  <p><strong>Showtime:</strong> ${showtime}</p>
+  <p><strong>Number of Tickets:</strong> ${number}</p>
+  <p><strong>Combo:</strong> ${combo.name} ($${combo.sale})</p>
+  <img src="../images/barcode.svg" style="width:150px;">
+`;
+} else {
+  
+  detailsContainer.innerHTML = "<p>There is no orders yet</p>";
 }
 
-
-function getJSONInfo() {
-    const details = JSON.parse(localStorage.getItem('ticket'))
-
-}
+deleteButton.addEventListener('click', () => {
+  localStorage.removeItem('ticket'); 
+  location.reload(); 
+});
