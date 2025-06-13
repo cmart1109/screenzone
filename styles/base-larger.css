@@ -79,4 +79,10 @@ form select, #tickets {
     border-radius: 20px;
 }
 
+form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 }
