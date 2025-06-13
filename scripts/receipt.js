@@ -1,9 +1,5 @@
-const theaterSelect = document.getElementById('theater-selection');
-const movieSelect = document.getElementById('movie-form');
-const showtimeSelect = document.getElementById('showtime-form')
-const comboSelect = document.getElementById('combo-form');
-const ticketsNumber = document.getElementById('tickets');
-const submitButton = document.getElementById('submit');
+const receiptContainer = document.getElementById('receipt')
+
 
 const theaters = {
   "theaters": [
@@ -162,76 +158,14 @@ const combosList = {
   ]
 }
 
-function createTheaterOption() {
-    theaters.theaters.forEach((theater, index) => {
-        const option = document.createElement('option');
-        option.value = index;
-        option.textContent = `${theater.name} - ${theater.location}`;
-        theaterSelect.appendChild(option);
-    })
-}
 
-function createMovieOption (movies) {
-  movieSelect.innerHTML = "";
-  movies.forEach((movie, index) => {
-    const option = document.createElement('option');
-    option.value = index;
-    option.textContent = movie.title
-    movieSelect.appendChild(option);
-  })
-}
-
-function createshowtimeOption(showtimes) {
-  showtimeSelect.innerHTML = "";
-  showtimes.forEach((shotime, index) => {
-    const option = document.createElement('option');
-    option.value = index;
-    option.textContent = shotime;
-    showtimeSelect.appendChild(option)
-  })
-}
-
-function createCombosOption(combos) {
-  combos.forEach((combo, index) => {
-      const option = document.createElement('option');
-      option.value = index;
-      option.textContent = combo.name;
-      comboSelect.appendChild(option);
-  })
+function getTicketInfo(ticket) {
+    const teather = theaters.theaters[ticket.theaterIndex];
+    const movie = theaterSelect.movies[ticket.movieIndex];
 }
 
 
+function getJSONInfo() {
+    const details = JSON.parse(localStorage.getItem('ticket'))
 
-theaterSelect.addEventListener('change', () => {
-  const selectedTheaterIndex = theaterSelect.value;
-  const selectedTheater = theaters.theaters[selectedTheaterIndex];
-  createMovieOption(selectedTheater.movies);
-  showtimeSelect.innerHTML = "";
-});
-
-movieSelect.addEventListener('change', () => {
-  const theaterIndex = theaterSelect.value;
-  const movieIndex = movieSelect.value;
-  const selectedMovie = theaters.theaters[theaterIndex].movies[movieIndex];
-  createshowtimeOption(selectedMovie.showtimes)
-})
-
-submitButton.addEventListener('click', () => {
-  const selectedTheaterIndex = theaterSelect.value;
-  const selectedMovieIndex = movieSelect.value;
-  const selectedShowtimeIndex = showtimeSelect.value;
-  const selectedTicketsNumber = ticketsNumber.value;
-  const selectedComboIndex = comboSelect.value;
-  localStorage.setItem("ticket", JSON.stringify({
-    theaterIndex: selectedTheaterIndex,
-    movieIndex: selectedMovieIndex,
-    showtimeIndex: selectedShowtimeIndex,
-    ticketsIndex: selectedTicketsNumber,
-    comboIndex: selectedComboIndex
-  }))
-
-})
-
-
-createTheaterOption();
-createCombosOption(combosList.combos);
+}
