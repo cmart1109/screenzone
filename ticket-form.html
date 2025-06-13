@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ScreenZone HomePage">
+    <title>Home - ScreenZone</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/base-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>ScreenZone</h1>
+            <button id="menu"></button>
+        </div>
+            <nav class="navigation">
+                    <a href="./index.html">Movies</a>
+                    <a href="./candy-store.html">Candy Store</a>
+                    <a href="./theaters.html">Showtimes</a>
+                    <a href="">Get a Ticket</a>
+            </nav>
+    </header>
+    <main class="form-main">
+        <div class="form-container">
+            <h1>Ticket Form</h1>
+            <p>Please full this form to give you a ticket</p>
+            <form>
+                <div class="">
+                    <label for="theater">Select the location</label>
+                     <select name="theater" id="theater-selection">
+                         <option value="" selected disabled>Please Select a Movie Theater</option>
+                     </select>
+                </div>
+                <div>
+                    <label for="movie">Select a movie</label>
+                    <select name="movie" id="">
+                        <option value="" selected disabled>Please Select a Movie</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="showtime">Select the Showtime</label>
+                    <select name="showtime" id="">
+                        <option value="" selected disabled>Please Select a showtime</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tickets">How many tickets are you buying?</label>
+                    <input type="number" name="tickets" id="tickets" max="10">
+                </div>
+                <div>
+                    <label for="combo">Select a Candy Store Combo</label>
+                    <select name="combo" id="">
+                        <option value="" selected disabled>Please Select a showtime</option>
+                        <option value="None" >None</option>
+                    </select>
+                </div>  
+                <input type="submit" name="submit" id="submit">      
+            </div>          
+            </form>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>Christian Martinez - WDD131</p>
+            <p id="year"></p>
+            <p id="lastModified"></p>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/ch-martinez2002/">
+                <img class="logo" src="./images/logos/linkedn.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/cmart1109/screenzone">
+                <img class="logo" src="./images/logos/github.png" alt="Github">
+            </a>
+        </div>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/button.js"></script>
+</body>
+</html>
