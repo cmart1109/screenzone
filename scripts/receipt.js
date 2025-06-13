@@ -160,8 +160,12 @@ const combosList = {
 
 
 function getTicketInfo(ticket) {
+
     const teather = theaters.theaters[ticket.theaterIndex];
     const movie = theaterSelect.movies[ticket.movieIndex];
+    const showtime = movie.showtimes[ticket.showtimeIndex];
+    const combo = combosList.combos[ticket.comboIndex];
+    
 }
 
 
