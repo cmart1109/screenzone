@@ -32,19 +32,19 @@
             <p>Please full this form to give you a ticket</p>
             <form action="./receipt.html" method="get">
                 <div class="">
-                    <label for="theater">Select the location</label>
+                    <label for="theater-selection">Select the location</label>
                      <select name="theater" id="theater-selection">
                          <option value="" selected disabled>Please Select a Movie Theater</option>
                      </select>
                 </div>
                 <div>
-                    <label for="movie">Select a movie</label>
+                    <label for="movie-form">Select a movie</label>
                     <select name="movie" id="movie-form">
                         <option value="" selected disabled>Please Select a Movie</option>
                     </select>
                 </div>
                 <div>
-                    <label for="showtime">Select the Showtime</label>
+                    <label for="showtime-form">Select the Showtime</label>
                     <select name="showtime" id="showtime-form" required>
                         <option value="" selected disabled>Please Select a showtime</option>
                     </select>
@@ -54,15 +54,15 @@
                     <input type="number" name="tickets" id="tickets" max="10" required>
                 </div>
                 <div>
-                    <label for="combo">Select a Candy Store Combo</label>
+                    <label for="combo-form">Select a Candy Store Combo</label>
                     <select name="combo" id="combo-form" required>
                         <option value="" selected disabled>Please Select a Candy Combo</option>
                         <option value="4" >None</option>
                     </select>
                 </div>  
                 <input type="submit" name="submit" id="submit">
-            </div>          
             </form>
+        </div>          
 
     </main>
     <footer>

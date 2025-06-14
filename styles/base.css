@@ -350,7 +350,6 @@ option {
 
 .form-container {
     background-color: var(--primary-color);
-    box-shadow: inset;
     border-radius: 30px;
     margin: 2rem;
     text-align: center;
