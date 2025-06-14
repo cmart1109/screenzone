@@ -154,6 +154,12 @@ const combosList = {
       "price": 19.99,
       "sale": 15.99,
       "image": "./images/candy/4.webp"
+    },
+        {
+      "name": "No Combo",
+      "price": 0,
+      "sale": 0,
+      "image": "./images/candy/1.webp"
     }
   ]
 }

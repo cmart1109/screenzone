@@ -182,6 +182,7 @@ footer {
     border: 0;
     outline: none;
     padding: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
     border-radius: 15px;
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
