@@ -45,7 +45,8 @@ function displayCombos(combosArray) {
     price.classList.add("normal-price")
     pricesContainer.appendChild(sale);
     pricesContainer.appendChild(price)
-    const buyButton = document.createElement("button");
+    const buyButton = document.createElement("a");
+    buyButton.href = "./ticket-form.html"
     buyButton.textContent = "Buy";
     comboContainer.appendChild(name);
     comboContainer.appendChild(image);

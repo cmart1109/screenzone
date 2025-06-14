@@ -78,7 +78,8 @@ function displayMovies(movies) {
         title.textContent = movie.title;
         const rating = document.createElement('p');
         rating.textContent = movie.rating;
-        const ticketButton = document.createElement('button');
+        const ticketButton = document.createElement('a');
+        ticketButton.href = "./ticket-form.html"
         ticketButton.textContent = 'Get Tickets';
         ticketButton.className = 'ticket-button';
         poster.appendChild(img);

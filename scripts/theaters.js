@@ -193,7 +193,8 @@ function setShowtimes(moviesArray) {
         showtimesContainer.classList.add('showtimes-container');
         const showtimeBox = document.createElement('div');
         showtimesList.forEach(showtime => {
-            const showtimeElement = document.createElement('span');
+            const showtimeElement = document.createElement('a');
+            showtimeElement.href = "./ticket-form.html"
             showtimeElement.textContent = showtime;
             showtimeElement.classList.add('showtime');
             showtimesContainer.appendChild(showtimeElement);
